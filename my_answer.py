@@ -133,7 +133,7 @@ class NeuralNetwork(object):
         
         #### Implement the forward pass here ####
         # TODO: Hidden layer - replace these values with the appropriate calculations.
-        hidden_inputs = np.dot([features], self.weights_input_to_hidden) # signals into hidden layer
+        hidden_inputs = np.dot(features, self.weights_input_to_hidden) # signals into hidden layer
         hidden_outputs = self.activation_function(hidden_inputs) # signals from hidden layer
         
         # TODO: Output layer - Replace these values with the appropriate calculations.
@@ -146,7 +146,7 @@ class NeuralNetwork(object):
 #########################################################
 # Set your hyperparameters here
 ##########################################################
-iterations = 5
-learning_rate = 0.1
-hidden_nodes = 20
+iterations = 50
+learning_rate = 0.003
+hidden_nodes = 22
 output_nodes = 1
